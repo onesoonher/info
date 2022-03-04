@@ -11286,7 +11286,7 @@ a.text-dark:focus {
 }
 
 .masthead.indexOnly {
-    height: calc(100vh - 81px);
+    height: calc(100vh - 72px);
 }
 
 @media screen and (max-width: 768px) {
