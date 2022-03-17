@@ -11290,9 +11290,9 @@ a.text-dark:focus {
 }
 
 @media screen and (max-width: 768px) {
-  .masthead.indexOnly {
-    height:auto ;
-  }
+    .masthead.indexOnly {
+        height: auto;
+    }
 }
 
 .pub-masthead {
