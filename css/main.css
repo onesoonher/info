@@ -11285,16 +11285,6 @@ a.text-dark:focus {
     padding-bottom: 6rem;
 }
 
-.masthead.indexOnly {
-    height: calc(100vh - 72px);
-}
-
-@media screen and (max-width: 768px) {
-    .masthead.indexOnly {
-        height: auto;
-    }
-}
-
 .pub-masthead {
     padding-top: calc(1rem + 74px);
     padding-bottom: 6rem;
