@@ -30,20 +30,20 @@ ul {
 }
 
 @media (max-width: 1024px) {
-    #main .mainArea {
-        flex-direction: column;
-        gap: 24px;
-        margin-bottom: 24px;
-    }
+  #main .mainArea {
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
 }
 
 #main .imgArea {
   /* margin-right: 300px; */
 }
 
-#main .bookArea .component{
-    display: flex;
-    width: 500px;
+#main .bookArea .component {
+  display: flex;
+  width: 500px;
 }
 
 #main .btn {
@@ -727,8 +727,14 @@ figcaption {
   width: 310px;
 }
 
+@media (max-width: 800px) {
+  figcaption {
+    display: none;
+  }
+}
+
 figcaption h1 {
-    font-size: 1.5em;
+  font-size: 1.5em;
   margin: 0;
 }
 
