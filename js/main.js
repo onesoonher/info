@@ -117,9 +117,6 @@
 
   $('#D10Download').click(function () {
     console.log('dl');
-    window.dataLayer.push({
-      event: 'D10Download',
-    })
   })
 
   //
