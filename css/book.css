@@ -727,7 +727,7 @@ figcaption {
   width: 310px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   figcaption {
     display: none;
   }
