@@ -1,16 +1,16 @@
 (function($) {
   "use strict"; // Start of use strict
   //smooth scroll
-  $("a").click(function() {
-    $("html,body").animate(
-      {
-        scrollTop: $($.attr(this, "href")).offset().top - 110
-      },
-      500
-    );
+  // $("a").click(function() {
+  //   $("html,body").animate(
+  //     {
+  //       scrollTop: $($.attr(this, "href")).offset().top - 110
+  //     },
+  //     500
+  //   );
 
-    return false;
-  });
+  //   return false;
+  // });
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
@@ -111,6 +111,16 @@
       }
     });
   }
+
+  window.dataLayer = window.dataLayer || [];
+
+
+  $('#D10Download').click(function () {
+    console.log('dl');
+    window.dataLayer.push({
+      event: 'D10Download',
+    })
+  })
 
   //
 })(jQuery); // End of use strict
