@@ -46,6 +46,12 @@ ul {
   width: 500px;
 }
 
+@media (max-width: 600px) {
+  #main .bookArea .component {
+    width: 300px;
+  }
+}
+
 #main .btn {
   display: inline-block;
   text-transform: uppercase;
@@ -750,7 +756,7 @@ figcaption p {
 }
 
 /* Media Queries */
-@media screen and (max-width: 37.8125em) {
+@media screen and (max-width: 600px) {
   .align > li {
     width: 100%;
     min-height: 440px;
