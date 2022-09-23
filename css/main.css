@@ -11285,6 +11285,10 @@ a.text-dark:focus {
     padding-bottom: 6rem;
 }
 
+.entryPage {
+    height: calc(100% - 72px);
+}
+
 .pub-masthead {
     padding-top: calc(1rem + 74px);
     padding-bottom: 6rem;
