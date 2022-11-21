@@ -69,34 +69,6 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
-  // Activate scrollspy to add active class to page-section-heading on scroll
-  $(window).scroll(function(event) {
-    var scroll = $(window).scrollTop();
-
-    // Do something
-    if (scroll == 0) {
-      $("#main").addClass("w3-animate-bottom");
-    } else {
-      $("#main").removeClass("w3-animate-bottom");
-    }
-    if (scroll > 270) {
-      $("#about").addClass("w3-animate-left");
-    } else {
-      $("#about").removeClass("w3-animate-left");
-    }
-
-    if (scroll > 160) {
-      $("#current").addClass("w3-animate-left");
-    } else {
-      $("#current").removeClass("w3-animate-left");
-    }
-    if (scroll > 795) {
-      $("#previous").addClass("w3-animate-bottom");
-    } else {
-      $("#previous").removeClass("w3-animate-bottom");
-    }
-  });
-
   var acc = document.getElementsByClassName("accordion");
   var i;
 
