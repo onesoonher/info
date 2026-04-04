@@ -11447,6 +11447,7 @@ a.text-dark:focus {
     line-height: 1.55;
     margin-top: 0;
     margin-bottom: 0.75rem;
+    white-space: pre-line;
 }
 
 .home-profile-card .home-contact-line {
@@ -11455,6 +11456,11 @@ a.text-dark:focus {
     flex-wrap: wrap;
     gap: 0.4rem 0.5rem;
     margin-bottom: 0.35rem;
+}
+
+.home-profile-card .home-email-inline {
+    display: inline-block;
+    min-width: 0;
 }
 
 .home-profile-card .home-contact-icon {
