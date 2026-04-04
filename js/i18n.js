@@ -139,6 +139,15 @@
       btn.classList.toggle("active", target === lang);
       btn.setAttribute("aria-pressed", target === lang ? "true" : "false");
     });
+
+    document.querySelectorAll(".lang-switch-toggle").forEach(function (langToggle) {
+      if (!messages) return;
+      var curKey = lang === "en" ? "lang.en" : "lang.zh";
+      var curLabel = getNested(messages, curKey);
+      if (curLabel != null) {
+        langToggle.textContent = String(curLabel).replace(/-+$/g, "").trim();
+      }
+    });
   }
 
   function loadJson(url) {

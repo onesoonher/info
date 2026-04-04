@@ -137,7 +137,7 @@ p {
     margin-left: 5px;
 }
 
-.active:after {
+.accordion.active:after {
     content: "\2796";
     color: #2c3e50;
     /* Unicode character for "minus" sign (-) */
@@ -11699,43 +11699,69 @@ body.lang-en.research-page .portfolio-modal p.eg-ResearchProject ~ p.eg-Research
     background-color: #1a252f;
 }
 
-/* Language switch (single primary language; nav uses one label per locale) */
-.lang-switch {
-    display: inline-flex;
-    border-radius: 0.35rem;
-    overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.35);
+/* Language switch：dropdown，與導列深色底搭配 */
+.lang-switch.dropdown {
+    display: inline-block;
 }
 
-.lang-switch-btn {
+.lang-switch .lang-switch-toggle {
     margin: 0;
-    padding: 0.45rem 0.85rem;
+    padding: 0.45rem 0.75rem;
     min-height: 44px;
     font-size: 0.9rem;
     font-weight: 700;
     line-height: 1.2;
-    color: #fff;
-    background: transparent;
-    border: none;
+    color: #fff !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0.35rem !important;
     cursor: pointer;
     transition: background 0.15s ease, color 0.15s ease;
 }
 
-.lang-switch-btn:hover,
-.lang-switch-btn:focus {
+.lang-switch .lang-switch-toggle:hover,
+.lang-switch .lang-switch-toggle:focus {
+    color: var(--primary) !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.lang-switch .lang-switch-toggle::after {
+    margin-left: 0.4rem;
+    vertical-align: 0.15em;
+}
+
+.lang-switch .dropdown-menu {
+    z-index: 1050;
+    min-width: 7.5rem;
+    margin-top: 0.25rem;
+    padding: 0.25rem 0;
+    border-radius: 0.35rem;
+}
+
+.lang-switch .dropdown-item.lang-switch-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #2c3e50;
+    background: #fff;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.lang-switch .dropdown-item.lang-switch-btn:hover,
+.lang-switch .dropdown-item.lang-switch-btn:focus {
     color: var(--primary);
+    background: #f3f4f6;
     outline: none;
 }
 
-.lang-switch-btn.active {
-    background: var(--primary);
+.lang-switch .dropdown-item.lang-switch-btn.active {
     color: var(--secondary);
-}
-
-.lang-switch-btn::after,
-.lang-switch-btn.active::after {
-    content: none !important;
-    display: none !important;
+    background: var(--primary);
 }
 
 @media (min-width: 992px) {
