@@ -11754,7 +11754,7 @@ body.lang-en.research-page .portfolio-modal p.eg-ResearchProject ~ p.eg-Research
 
 .lang-switch .dropdown-item.lang-switch-btn:hover,
 .lang-switch .dropdown-item.lang-switch-btn:focus {
-    color: var(--primary);
+    color: #2c3e50;
     background: #f3f4f6;
     outline: none;
 }
