@@ -86,6 +86,7 @@
 
   window.dataLayer = window.dataLayer || [];
 
+  $("[data-copyright-year]").text(new Date().getFullYear());
 
   $('#D10Download').click(function () {
     console.log('dl');

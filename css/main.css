@@ -6715,6 +6715,125 @@ a.close.disabled {
     }
 }
 
+/* Research Projects (research.html): 三欄卡片等高；外框在 .portfolio-item-caption-content，Logo 區在 .research-logo-slot 內置中 */
+.research-projects-row {
+    align-items: stretch;
+    /* 卡片之間留白（直向堆疊時亦保留列距） */
+    gap: 1.5rem;
+}
+.research-projects-row > [class*="col-"] {
+    display: flex;
+    align-items: stretch;
+}
+.research-projects-row .portfolio-item {
+    flex: 1 1 auto;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 25rem;
+    min-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+.research-projects-row .container-research {
+    width: 100% !important;
+    flex: 1 1 auto;
+    min-height: 15rem;
+    display: flex !important;
+    align-items: stretch !important;
+    justify-content: center !important;
+}
+.research-projects-row .portfolio-item-caption-content {
+    position: relative;
+    display: flex !important;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 100%;
+    flex: 1 1 auto;
+    min-height: 14rem;
+    box-sizing: border-box;
+    padding: 0.75rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    transition: opacity 0.35s ease;
+}
+.research-projects-row .container-research:hover .portfolio-item-caption-content {
+    opacity: 0.85;
+}
+.research-projects-row .portfolio-item-caption-content > .fa-plus {
+    display: none;
+}
+/* Logo 區域撐滿剩餘高度，圖在內置中（PNG / SVG 行為一致） */
+.research-projects-row .research-logo-slot {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 12rem;
+}
+.research-projects-row .research-logo-slot .image {
+    display: block;
+    width: auto !important;
+    max-width: 100%;
+    height: auto;
+    max-height: 8rem;
+    margin: 0 auto;
+    object-fit: contain;
+}
+/* SVG 以外框 .research-logo-slot 撐高；圖檔本身維持比例、不強制 height 以免變形 */
+.research-projects-row .research-logo-slot .image[src$=".svg"] {
+    width: auto;
+    max-width: 100%;
+    max-height: 8rem;
+}
+
+/* MORE：常態顯示、靠卡片下方、固定黑色（覆寫 992px+ 的絕對置中與 hover 才顯示） */
+.research-projects-row .research-more-label {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    -ms-transform: none !important;
+    opacity: 1 !important;
+    margin-top: auto;
+    flex-shrink: 0;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.25rem;
+}
+.research-projects-row .research-more-label .text {
+    color: #000 !important;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
+}
+.research-projects-row .container-research:hover .research-more-label {
+    opacity: 1 !important;
+}
+/* 覆寫 992px+ 對 .container-research:hover .image 的單獨變暗，改由整張卡片 .portfolio-item-caption-content 統一變淡 */
+.research-projects-row .container-research:hover .research-logo-slot .image {
+    opacity: 1;
+}
+
+/* gap 會佔寬度，需重算欄寬以免換行（與 col-md-6 / col-lg-4 搭配） */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .research-projects-row > .col-md-6.col-lg-4 {
+        flex: 0 0 calc((100% - 1.5rem) / 2) !important;
+        max-width: calc((100% - 1.5rem) / 2) !important;
+    }
+}
+@media (min-width: 992px) {
+    .research-projects-row > .col-md-6.col-lg-4 {
+        flex: 0 0 calc((100% - 3rem) / 3) !important;
+        max-width: calc((100% - 3rem) / 3) !important;
+    }
+}
+
 .portfolio-modal .close {
     position: absolute;
     z-index: 1;
