@@ -6739,7 +6739,7 @@ a.close.disabled {
 .research-projects-row .container-research {
     width: 100% !important;
     flex: 1 1 auto;
-    min-height: 15rem;
+    min-height: 13rem;
     display: flex !important;
     align-items: stretch !important;
     justify-content: center !important;
@@ -6752,9 +6752,9 @@ a.close.disabled {
     justify-content: flex-start;
     width: 100%;
     flex: 1 1 auto;
-    min-height: 14rem;
+    min-height: 12.5rem;
     box-sizing: border-box;
-    padding: 0.75rem;
+    padding: 0.75rem 0.75rem 1.65rem 0.75rem;
     background-color: #fff;
     border: 1px solid #dee2e6;
     border-radius: 0.25rem;
@@ -6773,14 +6773,15 @@ a.close.disabled {
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 12rem;
+    min-height: 8.5rem;
+    max-height: 10rem;
 }
 .research-projects-row .research-logo-slot .image {
     display: block;
     width: auto !important;
     max-width: 100%;
     height: auto;
-    max-height: 8rem;
+    max-height: 6.75rem;
     margin: 0 auto;
     object-fit: contain;
 }
@@ -6788,7 +6789,7 @@ a.close.disabled {
 .research-projects-row .research-logo-slot .image[src$=".svg"] {
     width: auto;
     max-width: 100%;
-    max-height: 8rem;
+    max-height: 6.75rem;
 }
 
 /* MORE：常態顯示、靠卡片下方、固定黑色（覆寫 992px+ 的絕對置中與 hover 才顯示） */
@@ -6802,15 +6803,31 @@ a.close.disabled {
     margin-top: auto;
     flex-shrink: 0;
     text-align: center;
-    padding-top: 0.5rem;
-    padding-bottom: 0.25rem;
+    padding-top: 0.45rem;
+    padding-bottom: 0.85rem;
 }
 .research-projects-row .research-more-label .text {
-    color: #000 !important;
-    font-size: 1rem;
+    display: inline-block;
+    color: #2c3e50 !important;
+    font-size: 0.9rem;
     font-weight: 600;
-    padding: 0.25rem 0.5rem;
+    line-height: 1.3;
+    padding: 0.4rem 1.15rem;
+    border-radius: 9999px;
+    border: 1px solid rgba(44, 62, 80, 0.45);
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 1px 2px rgba(44, 62, 80, 0.12);
+    cursor: pointer;
+    transition: color 0.15s ease, background 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
 }
+
+.research-projects-row .container-research:hover .research-more-label .text {
+    color: #1b2631 !important;
+    border-color: rgba(44, 62, 80, 0.65);
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(44, 62, 80, 0.18);
+}
+
 .research-projects-row .container-research:hover .research-more-label {
     opacity: 1 !important;
 }
@@ -11573,6 +11590,37 @@ body.lang-en.research-page #main > .text-left > .panel p.eg-awards ~ p.eg-awards
 
 .research-page #main > .text-left {
     padding-bottom: 1.25rem;
+}
+
+/* research.html Research Projects modal：依語系顯示中英（與 Awards 相同邏輯） */
+body.lang-zh-hant.research-page .research-project-en {
+    display: none !important;
+}
+
+body.lang-en.research-page .research-project-zh {
+    display: none !important;
+}
+
+body.research-page .portfolio-modal .ResearchProject-subtitle,
+body.research-page .portfolio-modal .eg-ResearchProject {
+    display: block;
+    width: 100%;
+}
+
+body.lang-zh-hant.research-page .portfolio-modal .eg-ResearchProject {
+    display: none !important;
+}
+
+body.lang-en.research-page .portfolio-modal .ResearchProject-subtitle {
+    display: none !important;
+}
+
+body.lang-zh-hant.research-page .portfolio-modal h7.ResearchProject-subtitle ~ h7.ResearchProject-subtitle {
+    margin-top: 0.45rem !important;
+}
+
+body.lang-en.research-page .portfolio-modal p.eg-ResearchProject ~ p.eg-ResearchProject {
+    margin-top: 0.45rem !important;
 }
 
 .pub-masthead {

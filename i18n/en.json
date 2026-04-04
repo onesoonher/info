@@ -16,7 +16,13 @@
     "en": "EN"
   },
   "research": {
-    "awardsTitle": "Awards"
+    "awardsTitle": "Awards",
+    "projectsSectionTitle": "Research Projects",
+    "moreLabel": "View more",
+    "closeModal": "Close Window",
+    "modalTitleNccu": "National Chengchi University",
+    "modalTitleNstc": "National Science and Technology Council",
+    "modalTitleMoe": "Ministry of Education"
   },
   "experience": {
     "degreesTitle": "Degrees",

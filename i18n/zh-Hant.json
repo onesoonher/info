@@ -16,7 +16,13 @@
     "en": "EN"
   },
   "research": {
-    "awardsTitle": "獎項"
+    "awardsTitle": "獎項",
+    "projectsSectionTitle": "研究計畫",
+    "moreLabel": "查看更多",
+    "closeModal": "關閉視窗",
+    "modalTitleNccu": "國立政治大學",
+    "modalTitleNstc": "國家科學及技術委員會",
+    "modalTitleMoe": "教育部"
   },
   "experience": {
     "degreesTitle": "學歷",
