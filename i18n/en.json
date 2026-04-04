@@ -1,0 +1,55 @@
+{
+  "site": {
+    "title": "Professor One-Soon Her",
+    "description": "Official website of Professor One-Soon Her"
+  },
+  "nav": {
+    "brand": "Professor One-Soon Her",
+    "home": "Home",
+    "experience": "Education & Experience",
+    "research": "Research",
+    "publications": "Publications"
+  },
+  "lang": {
+    "aria": "Interface language",
+    "zh": "繁中",
+    "en": "EN"
+  },
+  "research": {
+    "awardsTitle": "Awards"
+  },
+  "experience": {
+    "degreesTitle": "Degrees",
+    "currentTitle": "Current Positions",
+    "previousTitle": "Previous Positions",
+    "latestLabel": "Latest",
+    "currentSinceTjl": "Since 2002",
+    "currentSinceNccu": "Since February 2021",
+    "currentSinceToaj": "Since 2023"
+  },
+  "home": {
+    "name": "HER, ONE-SOON",
+    "affiliation": "Nan Lin and Alice Lin Chair Professor Department of Foreign Languages and Literature Tunghai University",
+    "phone": "+886-4-23590121, #31208",
+    "telAria": "Phone",
+    "emailAria": "Email"
+  },
+  "copyright": {
+    "line": "Copyright © One-Soon Her"
+  },
+  "publications": {
+    "searchHeading": "Search",
+    "charSearch": "Keyword",
+    "categorySearch": "Category",
+    "searchPlaceholder": "Search…",
+    "formalSectionTitle": "Formal Publications",
+    "otherLinksHeading": "Other links",
+    "linkOpinionCw": "Independent Review",
+    "catJournal": "Refereed Journal Articles",
+    "catBiblio": "Bibliographies",
+    "catChapter": "Book Chapters",
+    "catBooks": "Books and Monographs",
+    "catConference": "Conference Papers",
+    "catAll": "All"
+  }
+}

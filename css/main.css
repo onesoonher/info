@@ -747,6 +747,15 @@ mark,
     opacity: 1;
 }
 
+a.publication-all-link {
+    color: #000 !important;
+}
+
+a.publication-all-link:hover,
+a.publication-all-link:focus {
+    color: #000 !important;
+}
+
 .pub_a {
     color: rgb(236, 172, 54);
 }
@@ -4692,16 +4701,6 @@ input[type="button"].btn-block {
     padding-bottom: 0.3rem;
     margin-right: 1rem;
     font-size: 1rem;
-    line-height: inherit;
-    white-space: nowrap;
-}
-
-.navbar-subBrand {
-    display: flex;
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
-    margin-right: 1rem;
-    font-size: 0.8rem;
     line-height: inherit;
     white-space: nowrap;
 }
@@ -8942,6 +8941,13 @@ button.bg-dark:focus {
     width: auto !important;
 }
 
+.w-fit {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    max-width: 100% !important;
+}
+
 .h-25 {
     height: 25% !important;
 }
@@ -11408,6 +11414,167 @@ a.text-dark:focus {
     min-height: calc(100% - 72px);
 }
 
+.home-profile-card .home-profile-name {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 0.35rem;
+    color: #000;
+}
+
+.home-profile-card .home-profile-affiliation {
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.55;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+.home-profile-card .home-contact-line {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.4rem 0.5rem;
+    margin-bottom: 0.35rem;
+}
+
+.home-profile-card .home-contact-icon {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    display: block;
+    object-fit: contain;
+    align-self: center;
+}
+
+/* experience.html: 卡片內僅顯示目前語系（card-title = 繁中，card-title-eg = 英文） */
+body.lang-en.experience-page .card-body > div.card-title {
+    display: none !important;
+}
+
+body.lang-zh-hant.experience-page .card-body > div.card-title-eg {
+    display: none !important;
+}
+
+/* experience.html：學歷／現職同一列卡片底部對齊等高 */
+body.experience-page #main > .row > [class*="col-"],
+body.experience-page #current .row > [class*="col-"] {
+    display: flex;
+    flex-direction: column;
+}
+
+body.experience-page #main > .row > [class*="col-"] > .card,
+body.experience-page #current .row > [class*="col-"] > .card {
+    flex: 1 1 auto;
+    width: 100%;
+}
+
+body.experience-page #current .card-body > p:first-of-type {
+    margin-bottom: 1.5rem;
+}
+
+/* experience.html 經歷時間軸：依語系只顯示繁中或英文其中一組 */
+body.lang-en.experience-page .timeline .timeline-lang-zh {
+    display: none !important;
+}
+
+body.lang-zh-hant.experience-page .timeline .timeline-lang-en {
+    display: none !important;
+}
+
+body.experience-page .timeline-lang-zh p .timeline-link {
+    display: inline;
+    margin-bottom: 0;
+}
+
+/* 英文介面：現職／學歷卡片英文區一般文字黑色，連結維持原色 */
+body.lang-en.experience-page .card-body > .card-title-eg {
+    color: #1a1a1a;
+}
+
+body.lang-en.experience-page .card-body > .card-title-eg a {
+    color: rgb(151, 97, 42);
+}
+
+/* 英文介面：經歷時間軸英文區一般文字黑色，連結維持原色 */
+body.lang-en.experience-page .timeline .timeline-lang-en {
+    color: #1a1a1a;
+}
+
+body.lang-en.experience-page .timeline .timeline-lang-en a.timeline-link {
+    color: rgb(156, 109, 22);
+}
+
+/* research.html Awards：手風琴與展開區僅顯示目前語系（繁中為主、英文替換同一位置） */
+body.lang-zh-hant.research-page #main > .text-left > .accordion .eg-awards {
+    display: none !important;
+}
+
+body.lang-en.research-page #main > .text-left > .accordion .awards-btn-zh {
+    display: none !important;
+}
+
+body.lang-en.research-page #main > .text-left > .accordion .eg-awards {
+    color: #1a1a1a;
+    font-size: inherit;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+body.lang-zh-hant.research-page #main > .text-left > .panel .eg-awards {
+    display: none !important;
+}
+
+body.lang-en.research-page #main > .text-left > .panel .awards-subtitle {
+    display: none !important;
+}
+
+body.lang-en.research-page #main > .text-left > .panel .eg-awards {
+    color: #1a1a1a;
+    font-size: 1rem;
+    display: block;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body.lang-en.research-page #main > .text-left > .panel .eg-awards a,
+body.lang-en.research-page #main > .text-left > .panel .eg-awards a.card-title {
+    color: #cd853f;
+}
+
+/* Awards 展開區：年度分行；收合時垂直 padding 為 0（避免 max-height:0 仍露出白底） */
+.research-page #main > .text-left > .accordion + .panel {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.research-page #main > .text-left > .accordion.active + .panel {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.research-page #main > .text-left > .panel .awards-subtitle {
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+body.lang-zh-hant.research-page #main > .text-left > .panel h7.awards-subtitle ~ h7.awards-subtitle {
+    margin-top: 0.55rem !important;
+}
+
+body.lang-en.research-page #main > .text-left > .panel p.eg-awards ~ p.eg-awards {
+    margin-top: 0.55rem !important;
+}
+
+.research-page #main > .text-left {
+    padding-bottom: 1.25rem;
+}
+
 .pub-masthead {
     padding-top: calc(1rem + 74px);
     padding-bottom: 6rem;
@@ -11484,8 +11651,60 @@ a.text-dark:focus {
     background-color: #1a252f;
 }
 
-.nav-barEn {
-    font-size: 1rem;
-    line-height: 1.5rem;
+/* Language switch (single primary language; nav uses one label per locale) */
+.lang-switch {
+    display: inline-flex;
+    border-radius: 0.35rem;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.lang-switch-btn {
+    margin: 0;
+    padding: 0.45rem 0.85rem;
+    min-height: 44px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+}
+
+.lang-switch-btn:hover,
+.lang-switch-btn:focus {
     color: var(--primary);
+    outline: none;
+}
+
+.lang-switch-btn.active {
+    background: var(--primary);
+    color: var(--secondary);
+}
+
+.lang-switch-btn::after,
+.lang-switch-btn.active::after {
+    content: none !important;
+    display: none !important;
+}
+
+@media (min-width: 992px) {
+    .lang-switch-wrap {
+        margin-top: 0 !important;
+    }
+}
+
+body.lang-en {
+    font-family: "Noto Sans TC", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* 英文介面：研究計畫 modal 英文說明為黑色，連結可另著色 */
+body.lang-en .eg-ResearchProject {
+    color: #1a1a1a;
+}
+
+body.lang-en .eg-ResearchProject a {
+    color: #cd853f;
 }

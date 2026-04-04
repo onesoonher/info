@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cn">
+<html lang="zh-Hant">
 
 <head>
     <meta charset="utf-8" />
@@ -32,8 +32,7 @@
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
         <div class="container">
             <div>
-                <a class="navbar-brand js-scroll-trigger" href="index.html">何萬順教授</a>
-                <a class="navbar-subBrand" href="index.html">Professor One-Soon Her</a>
+                <a class="navbar-brand js-scroll-trigger" href="index.html" data-i18n="nav.brand">何萬順教授</a>
             </div>
 
             <button
@@ -45,34 +44,28 @@
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <!-- Home page -->
+                <ul class="navbar-nav ml-auto align-items-lg-center">
                     <li class="nav-item mx-0 mx-lg-1">
-                        <a class="btn btn-secondary py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html">首頁
-                            <span class="nav-barEn">Home</span>
-                        </a>
+                        <a class="btn btn-secondary py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html"
+                            data-i18n="nav.home">首頁</a>
                     </li>
-                    <!-- Education & Experience -->
                     <li>
-                        <a class="btn btn-secondary py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="experience.html">學歷經歷
-                            <span class="nav-barEn">Education & Experience</span>
-                        </a>
+                        <a class="btn btn-secondary py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="experience.html"
+                            data-i18n="nav.experience">學歷經歷</a>
                     </li>
-                    <!-- Research -->
                     <li>
-                        <a class="btn btn-secondary py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="research.html">學術研究
-                            <span class="nav-barEn">Research</span>
-                        </a>
+                        <a class="btn btn-secondary py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="research.html"
+                            data-i18n="nav.research">學術研究</a>
                     </li>
-
-                    <!-- Publications -->
                     <li>
-                        <a class="btn btn-secondary py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="publications.html">出版著作
-                            <span class="nav-barEn">Publications</span>
-                        </a>
+                        <a class="btn btn-secondary py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="publications.html"
+                            data-i18n="nav.publications">出版著作</a>
+                    </li>
+                    <li class="nav-item lang-switch-wrap ml-lg-2 mt-3 mt-lg-0 d-flex align-items-center justify-content-center justify-content-lg-end">
+                        <div class="lang-switch" role="group" data-i18n-aria="lang.aria" aria-label="介面語言">
+                            <button type="button" class="lang-switch-btn" data-lang="zh" aria-pressed="true">繁中</button>
+                            <button type="button" class="lang-switch-btn" data-lang="en" aria-pressed="false">EN</button>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -85,8 +78,8 @@
             <!-- Search Icon  -->
             <div>
                 <!-- Search Title  -->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">
-                    Search
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" data-i18n="publications.searchHeading">
+                    搜尋
                 </h2>
             </div>
 
@@ -101,7 +94,7 @@
 
             <div class="jumbotron jumbotron-fluid row text-center align-items-center">
                 <div class="col-md-4 col-lg-2">
-                    <h5>字元搜尋</h5>
+                    <h5 data-i18n="publications.charSearch">字元搜尋</h5>
                 </div>
                 <div class="col-md-10">
                     <div class="box">
@@ -109,7 +102,7 @@
                             <span class="icon">
                                 <i class="fa fa-search"></i>
                             </span>
-                            <input type="search" onkeyup="tableSort()" id="search" placeholder="Search..." />
+                            <input type="search" onkeyup="tableSort()" id="search" data-i18n-placeholder="publications.searchPlaceholder" placeholder="搜尋…" />
                         </div>
                     </div>
                 </div>
@@ -117,61 +110,55 @@
 
             <div class="jumbotron jumbotron-fluid row text-center align-items-center publication-icon">
                 <div class="col-lg-2 col-md-4">
-                    <h5>類別搜尋</h5>
+                    <h5 data-i18n="publications.categorySearch">類別搜尋</h5>
                 </div>
                 <div
                     class="col-lg-10 col-md-10 align-items-center text-center align-middle d-lg-inline-flex d-md-inline-flex d-inline-flex">
                     <div class="publication-container" id="A">
                         <a href="#current" name="Refereed Journal Articles" onclick=" A() ">
                             <img src="img/article.png" alt="" class="publication-image" />
-                            <div class="publication-overlay">期刊論文</div>
+                            <div class="publication-overlay" data-i18n="publications.catJournal">期刊論文</div>
                         </a>
                     </div>
                     <div class="publication-container" id="B">
                         <a href="#current" name="Bibliographies" onclick=" B() ">
                             <img src="img/bibliographies.png" alt="" class="publication-image" />
-                            <div class="publication-overlay">書目</div>
+                            <div class="publication-overlay" data-i18n="publications.catBiblio">書目</div>
                         </a>
                     </div>
                     <div class="publication-container" id="C">
                         <a href="#current" name="Book Chapters" onclick=" C() ">
                             <img src="img/bookChapter.png" alt="" class="publication-image" />
-                            <div class="publication-overlay">專書篇章</div>
+                            <div class="publication-overlay" data-i18n="publications.catChapter">專書篇章</div>
                         </a>
                     </div>
                     <div class="publication-container" id="D">
                         <a href="#current" name="Books and Monographs" onclick=" D() ">
                             <img src="img/booksAndMonographs.png" alt="" class="publication-image" />
-                            <div class="publication-overlay">專書</div>
+                            <div class="publication-overlay" data-i18n="publications.catBooks">專書</div>
                         </a>
                     </div>
                     <div class="publication-container" id="E">
                         <a href="#current" name="Conference Papers" onclick=" E() ">
                             <img src="img/conferencePaper.png" alt="" class="publication-image" />
-                            <div class="publication-overlay">會議論文</div>
+                            <div class="publication-overlay" data-i18n="publications.catConference">會議論文</div>
                         </a>
                     </div>
                     <div class="publication-container" id="E">
-                        <a href="#current" name="All" onclick=" window.location.reload() ">
-                            All
-                        </a>
+                        <a href="#current" name="All" class="publication-all-link" onclick=" window.location.reload() " data-i18n="publications.catAll">全部</a>
                     </div>
                 </div>
             </div>
 
             <div class="jumbotron jumbotron-fluid row text-center align-items-center">
                 <div class="col-md-4 col-lg-2">
-                    <h5>其他連結</h5>
+                    <h5 data-i18n="publications.otherLinksHeading">其他連結</h5>
                 </div>
                 <div class="col-md-10 text-left">
                     <div class="box">
                         <div class="container-1">
-                            <a target="_blank" class="card-title"
-                                href="https://opinion.cw.com.tw/blog/profile/351">獨立評論</a>
-                            ｜
-                            <a target="_blank" class="card-title" href="http://www3.nccu.edu.tw/~osh/e.html">舊)出版著作</a>
-                            ｜
-                            <a target="_blank" class="card-title" href="http://www3.nccu.edu.tw/~osh/f.html">舊)會議論文</a>
+                            <a target="_blank" class="card-title" rel="noopener noreferrer"
+                                href="https://opinion.cw.com.tw/blog/profile/351" data-i18n="publications.linkOpinionCw">獨立評論</a>
                         </div>
                     </div>
                 </div>
@@ -179,14 +166,12 @@
         </div>
     </header>
 
-    <!-- Formal Publications -->
+    <!-- 公開著作列表 -->
     <section class="pub-masthead about text-center text-secondary" id="current">
         <div class="container d-flex align-items-center flex-column">
-            <!-- Formal Publications Icon  -->
             <div>
-                <!-- Formal Publications Title  -->
-                <h2 class="text-center text-uppercase text-secondary mb-0">
-                    Formal Publications
+                <h2 class="text-center text-secondary mb-0" data-i18n="publications.formalSectionTitle">
+                    公開著作
                 </h2>
             </div>
 
@@ -3606,7 +3591,7 @@
     <!-- Copyright Section -->
     <section class="copyright py-4 text-center text-white">
         <div class="container">
-            <small>Copyright &copy; 何萬順 <span data-copyright-year></span></small>
+            <small><span data-i18n="copyright.line">Copyright © 何萬順</span> <span data-copyright-year></span></small>
         </div>
     </section>
 
@@ -3624,6 +3609,7 @@
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
     <script>
         function A() {

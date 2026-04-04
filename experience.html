@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cn">
+<html lang="zh-Hant">
 
 <head>
     <meta charset="utf-8" />
@@ -27,13 +27,12 @@
     <link href="css/main.css" rel="stylesheet" />
 </head>
 
-<body id="page-top">
+<body id="page-top" class="experience-page">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
         <div class="container">
             <div>
-                <a class="navbar-brand js-scroll-trigger" href="index.html">何萬順教授</a>
-                <a class="navbar-subBrand" href="index.html">Professor One-Soon Her</a>
+                <a class="navbar-brand js-scroll-trigger" href="index.html" data-i18n="nav.brand">何萬順教授</a>
             </div>
 
             <button
@@ -45,34 +44,28 @@
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <!-- Home page -->
+                <ul class="navbar-nav ml-auto align-items-lg-center">
                     <li class="nav-item mx-0 mx-lg-1">
-                        <a class="btn btn-secondary py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html">首頁
-                            <span class="nav-barEn">Home</span>
-                        </a>
+                        <a class="btn btn-secondary py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html"
+                            data-i18n="nav.home">首頁</a>
                     </li>
-                    <!-- Education & Experience -->
                     <li>
-                        <a class="btn btn-secondary py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="experience.html">學歷經歷
-                            <span class="nav-barEn">Education & Experience</span>
-                        </a>
+                        <a class="btn btn-secondary py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="experience.html"
+                            data-i18n="nav.experience">學歷經歷</a>
                     </li>
-                    <!-- Research -->
                     <li>
-                        <a class="btn btn-secondary py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="research.html">學術研究
-                            <span class="nav-barEn">Research</span>
-                        </a>
+                        <a class="btn btn-secondary py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="research.html"
+                            data-i18n="nav.research">學術研究</a>
                     </li>
-
-                    <!-- Publications -->
                     <li>
-                        <a class="btn btn-secondary py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="publications.html">出版著作
-                            <span class="nav-barEn">Publications</span>
-                        </a>
+                        <a class="btn btn-secondary py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="publications.html"
+                            data-i18n="nav.publications">出版著作</a>
+                    </li>
+                    <li class="nav-item lang-switch-wrap ml-lg-2 mt-3 mt-lg-0 d-flex align-items-center justify-content-center justify-content-lg-end">
+                        <div class="lang-switch" role="group" data-i18n-aria="lang.aria" aria-label="介面語言">
+                            <button type="button" class="lang-switch-btn" data-lang="zh" aria-pressed="true">繁中</button>
+                            <button type="button" class="lang-switch-btn" data-lang="en" aria-pressed="false">EN</button>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -86,8 +79,8 @@
             <div>
                 <img class="pic" src="img/degrees.png" width="70" height="70" alt="" />
                 <!-- Degree Title  -->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">
-                    degrees
+                <h2 class="page-section-heading text-center text-secondary mb-0" data-i18n="experience.degreesTitle">
+                    學歷
                 </h2>
             </div>
 
@@ -188,8 +181,8 @@
             <div>
                 <img class="pic" src="img/office.png" width="50" height="50" alt="office" />
                 <!-- Current Positions Title  -->
-                <h2 class="text-center text-uppercase text-secondary mb-0">
-                    Current Positions
+                <h2 class="text-center text-secondary mb-0" data-i18n="experience.currentTitle">
+                    現職
                 </h2>
             </div>
 
@@ -207,7 +200,7 @@
                 <div class="col-lg-4">
                     <div class="card text-left">
                         <div class="card-body">
-                            <p>Since 2002</p>
+                            <p data-i18n="experience.currentSinceTjl">自 2002 年起</p>
                             <div class="card-title">
                                 <!-- last checked 20220616 -->
                                 <a class="card-title" href="http://tjl.nccu.edu.tw/main/editors/tw"
@@ -225,7 +218,7 @@
                 <div class="col-lg-4">
                     <div class="card text-left">
                         <div class="card-body">
-                            <p>Since February 2021</p>
+                            <p data-i18n="experience.currentSinceNccu">自 2021 年 2 月起</p>
                             <div class="card-title">
                                 <!-- last checked 20210128 -->
                                 <a class="card-title" href="https://www.nccu.edu.tw/app/home.php"
@@ -269,7 +262,7 @@
                 <div class="col-lg-4">
                     <div class="card text-left">
                         <div class="card-body">
-                            <p>Since 2023</p>
+                            <p data-i18n="experience.currentSinceToaj">自 2023 年起</p>
                             <div class="card-title">
                                 <!-- last checked 20210128 -->
                                 <a class="card-title" href="https://toaj.stpi.narl.org.tw/"
@@ -293,8 +286,8 @@
     <section class="masthead bg-primary">
         <div class="container" id="previous">
             <!-- Contact Section Heading -->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">
-                Previous Positions
+            <h2 class="page-section-heading text-center text-secondary mb-0" data-i18n="experience.previousTitle">
+                經歷
             </h2>
 
             <!-- Icon Divider -->
@@ -308,173 +301,275 @@
 
             <!-- Previous Positions Section -->
             <!--timeline-->
-            <h4>Latest</h4>
+            <h4 data-i18n="experience.latestLabel">近期</h4>
             <ul class="timeline">
                 2020
                 <li id="2020">
                     <span class="timeline-title">Aug, 2020 - Jan, 2021</span>
-                    <p>Chair Professor 國立政治大學 語言學研究所 講座教授</p>
-                    <a class="timeline-link" target="_blank" href="https://ling.nccu.edu.tw/main.php">Graduate Institute
-                        of Linguistics,</a>
-                    <a class="timeline-link" target="_blank" href="https://www.nccu.edu.tw/app/home.php">NCCU</a>
+                    <div class="timeline-lang-zh">
+                        <p>國立政治大學 語言學研究所 講座教授</p>
+                    </div>
+                    <div class="timeline-lang-en">
+                        <p>Chair Professor,</p>
+                        <a class="timeline-link" target="_blank" href="https://ling.nccu.edu.tw/main.php">Graduate Institute
+                            of Linguistics,</a>
+                        <a class="timeline-link" target="_blank" href="https://www.nccu.edu.tw/app/home.php">NCCU</a>
+                    </div>
                 </li>
                 <li>
                     <span class="timeline-title">Aug, 2008 - Jul, 2020</span>
-                    <p>Distinguished Professor 國立政治大學 語言學研究所 特聘教授</p>
-                    <a class="timeline-link" target="_blank" href="https://ling.nccu.edu.tw/main.php">Graduate Institute
-                        of Linguistics,</a>
-                    <a class="timeline-link" target="_blank" href="https://www.nccu.edu.tw/app/home.php">NCCU</a>
+                    <div class="timeline-lang-zh">
+                        <p>國立政治大學 語言學研究所 特聘教授</p>
+                    </div>
+                    <div class="timeline-lang-en">
+                        <p>Distinguished Professor,</p>
+                        <a class="timeline-link" target="_blank" href="https://ling.nccu.edu.tw/main.php">Graduate Institute
+                            of Linguistics,</a>
+                        <a class="timeline-link" target="_blank" href="https://www.nccu.edu.tw/app/home.php">NCCU</a>
+                    </div>
                 </li>
                 2015
                 <li id="2015">
                     <span class="timeline-title">Jan, 2013 - Dec, 2015</span>
-                    <p>Convener 科技部語言學門 召集人</p>
-                    Linguistics Division,
-                    <a class="timeline-link" target="_blank" href="https://www.most.gov.tw/">Ministry of Science and
-                        Technology</a>
+                    <div class="timeline-lang-zh">
+                        <p>科技部 語言學門 召集人</p>
+                    </div>
+                    <div class="timeline-lang-en">
+                        <p>Convener, Linguistics Division,</p>
+                        <a class="timeline-link" target="_blank" href="https://www.most.gov.tw/">Ministry of Science and
+                            Technology</a>
+                    </div>
                 </li>
                 2007
                 <li id="2007">
                     <span class="timeline-title">Aug, 2006 - Jul, 2007</span>
-                    <p>Chair 國立政治大學 語言學研究所 所長</p>
-                    <a class="timeline-link" target="_blank" href="https://ling.nccu.edu.tw/main.php">Graduate Institute
-                        of Linguistics,</a>
-                    <a class="timeline-link" target="_blank" href="https://www.nccu.edu.tw/app/home.php">NCCU</a>
+                    <div class="timeline-lang-zh">
+                        <p>國立政治大學 語言學研究所 所長</p>
+                    </div>
+                    <div class="timeline-lang-en">
+                        <p>Chair,</p>
+                        <a class="timeline-link" target="_blank" href="https://ling.nccu.edu.tw/main.php">Graduate Institute
+                            of Linguistics,</a>
+                        <a class="timeline-link" target="_blank" href="https://www.nccu.edu.tw/app/home.php">NCCU</a>
+                    </div>
                 </li>
                 2006
                 <li id="2006">
                     <span class="timeline-title">Since 2006</span>
-                    <p>Editorial Board</p>
-                    <a class="timeline-link" target="_blank" href="http://www.skase.sk/jtl.html">SKASE Journal of
-                        Theoretical Linguistics</a>
+                    <div class="timeline-lang-zh">
+                        <p>《<a class="timeline-link" target="_blank" href="http://www.skase.sk/jtl.html">理論語言學</a>》（SKASE）期刊 編輯委員</p>
+                    </div>
+                    <div class="timeline-lang-en">
+                        <p>Editorial Board,</p>
+                        <a class="timeline-link" target="_blank" href="http://www.skase.sk/jtl.html">SKASE Journal of
+                            Theoretical Linguistics</a>
+                    </div>
                 </li>
                 <li>
                     <span class="timeline-title">Sep, 2005 - Feb, 2006</span>
-                    <p>Visiting Professor 澳洲 邦德大學 資訊科技學院 客座教授</p>
-                    <a class="timeline-link" target="_blank" href="http://www.bond.edu.au/">School of Information
-                        Technology,</a>
-                    <a class="timeline-link" target="_blank" href="http://www.bond.edu.au/">Bond University,</a>
-                    <p>Australia</p>
+                    <div class="timeline-lang-zh">
+                        <p>澳洲 邦德大學 資訊科技學院 客座教授</p>
+                        <p>澳大利亞</p>
+                    </div>
+                    <div class="timeline-lang-en">
+                        <p>Visiting Professor,</p>
+                        <a class="timeline-link" target="_blank" href="http://www.bond.edu.au/">School of Information
+                            Technology,</a>
+                        <a class="timeline-link" target="_blank" href="http://www.bond.edu.au/">Bond University,</a>
+                        <p>Australia</p>
+                    </div>
                 </li>
                 2003
                 <li id="2003">
                     <span class="timeline-title">Jul, 2003 - Dec, 2003</span>
-                    <p>Visiting Professor 澳洲 邦德大學 資訊科技學院 客座教授</p>
-                    <a class="timeline-link" target="_blank" href="http://www.bond.edu.au/">School of Information
-                        Technology,</a>
-                    <a class="timeline-link" target="_blank" href="http://www.bond.edu.au/">Bond University,</a>
-                    <p>Australia</p>
+                    <div class="timeline-lang-zh">
+                        <p>澳洲 邦德大學 資訊科技學院 客座教授</p>
+                        <p>澳大利亞</p>
+                    </div>
+                    <div class="timeline-lang-en">
+                        <p>Visiting Professor,</p>
+                        <a class="timeline-link" target="_blank" href="http://www.bond.edu.au/">School of Information
+                            Technology,</a>
+                        <a class="timeline-link" target="_blank" href="http://www.bond.edu.au/">Bond University,</a>
+                        <p>Australia</p>
+                    </div>
                 </li>
                 <li>
                     <span class="timeline-title">Aug, 2002 - Jul, 2003</span>
-                    <p>Chair 國立政治大學 語言學研究所 所長</p>
-                    <a class="timeline-link" target="_blank" href="https://ling.nccu.edu.tw/main.php">Graduate Institute
-                        of Linguistics,</a>
-                    <a class="timeline-link" target="_blank" href="https://www.nccu.edu.tw/app/home.php">NCCU</a>
+                    <div class="timeline-lang-zh">
+                        <p>國立政治大學 語言學研究所 所長</p>
+                    </div>
+                    <div class="timeline-lang-en">
+                        <p>Chair,</p>
+                        <a class="timeline-link" target="_blank" href="https://ling.nccu.edu.tw/main.php">Graduate Institute
+                            of Linguistics,</a>
+                        <a class="timeline-link" target="_blank" href="https://www.nccu.edu.tw/app/home.php">NCCU</a>
+                    </div>
                 </li>
                 2002
                 <li id="2002">
                     <span class="timeline-title">Since Oct, 2002</span>
-                    <p>Founder and Editor 《台灣語言學期刊》 創刊主編</p>
-                    <a class="timeline-link" target="_blank" href="http://tjl.nccu.edu.tw/main/volumes/tw">Taiwan
-                        Journal of Linguistics</a>
+                    <div class="timeline-lang-zh">
+                        <p>《<a class="timeline-link" target="_blank" href="http://tjl.nccu.edu.tw/main/volumes/tw">台灣語言學期刊</a>》創刊主編</p>
+                    </div>
+                    <div class="timeline-lang-en">
+                        <p>Founder and Editor,</p>
+                        <a class="timeline-link" target="_blank" href="http://tjl.nccu.edu.tw/main/volumes/tw">Taiwan
+                            Journal of Linguistics</a>
+                    </div>
                 </li>
                 2001
                 <li id="2001">
                     <span class="timeline-title">Jan, 2001 - Sep, 2001</span>
-                    <p>Visiting Scholar 澳洲 葛非斯大學 語言暨語言學學院 訪問學者</p>
-                    <a class="timeline-link" target="_blank" href="https://www.griffith.edu.au/">School of Languages and
-                        Linguistics,</a>
-                    <p>Griffith University</p>
+                    <div class="timeline-lang-zh">
+                        <p>澳洲 格里菲斯大學 語言暨語言學學院 訪問學者</p>
+                        <p>格里菲斯大學</p>
+                    </div>
+                    <div class="timeline-lang-en">
+                        <p>Visiting Scholar,</p>
+                        <a class="timeline-link" target="_blank" href="https://www.griffith.edu.au/">School of Languages and
+                            Linguistics,</a>
+                        <p>Griffith University</p>
+                    </div>
                 </li>
                 <li>
                     <span class="timeline-title">Jan, 2001 - Sep, 2001</span>
-                    <p>Visiting Professor 澳洲 邦德大學 資訊科技學院 客座教授</p>
-                    <a class="timeline-link" target="_blank" href="http://www.bond.edu.au/">School of Information
-                        Technology,</a>
-                    <a class="timeline-link" target="_blank" href="http://www.bond.edu.au/">Bond University</a>
+                    <div class="timeline-lang-zh">
+                        <p>澳洲 邦德大學 資訊科技學院 客座教授</p>
+                    </div>
+                    <div class="timeline-lang-en">
+                        <p>Visiting Professor,</p>
+                        <a class="timeline-link" target="_blank" href="http://www.bond.edu.au/">School of Information
+                            Technology,</a>
+                        <a class="timeline-link" target="_blank" href="http://www.bond.edu.au/">Bond University</a>
+                    </div>
                 </li>
                 1998
                 <li id="1998">
                     <span class="timeline-title">Since Feb, 1998</span>
-                    <p>Professor 國立政治大學 語言學研究所 教授</p>
-                    <a class="timeline-link" target="_blank" href="https://ling.nccu.edu.tw/main.php">Graduate Institute
-                        of Linguistics,</a>
-                    <a class="timeline-link" target="_blank" href="https://www.nccu.edu.tw/app/home.php">NCCU</a>
+                    <div class="timeline-lang-zh">
+                        <p>國立政治大學 語言學研究所 教授</p>
+                    </div>
+                    <div class="timeline-lang-en">
+                        <p>Professor,</p>
+                        <a class="timeline-link" target="_blank" href="https://ling.nccu.edu.tw/main.php">Graduate Institute
+                            of Linguistics,</a>
+                        <a class="timeline-link" target="_blank" href="https://www.nccu.edu.tw/app/home.php">NCCU</a>
+                    </div>
                 </li>
                 <li>
                     <span class="timeline-title">Since Feb, 1998</span>
-                    <p>Researcher 國立政治大學 心智大腦與學習研究中心 研究員</p>
-                    <a class="timeline-link" target="_blank" href="http://rcmbl.nccu.edu.tw/index.php?lang=zh">Research
-                        Center for Mind, Brain, and Learning,</a>
-                    <a class="timeline-link" target="_blank" href="https://www.nccu.edu.tw/app/home.php">NCCU</a>
+                    <div class="timeline-lang-zh">
+                        <p>國立政治大學 <a class="timeline-link" target="_blank" href="http://rcmbl.nccu.edu.tw/index.php?lang=zh">心智大腦與學習研究中心</a> 研究員</p>
+                    </div>
+                    <div class="timeline-lang-en">
+                        <p>Researcher,</p>
+                        <a class="timeline-link" target="_blank" href="http://rcmbl.nccu.edu.tw/index.php?lang=en">Research
+                            Center for Mind, Brain, and Learning,</a>
+                        <a class="timeline-link" target="_blank" href="https://www.nccu.edu.tw/app/home.php">NCCU</a>
+                    </div>
                 </li>
                 <li>
                     <span class="timeline-title">1999 - 2001</span>
-                    <p>
-                        Project Advisor 土耳其 中東科技大學 計算機工程學系 研究計畫顧問
-                    </p>
-                    <a class="timeline-link" target="_blank" href="http://www.lcsl.metu.edu.tr/">LFG-based MT for
-                        English<->Turkish,</a>
-                    <a class="timeline-link" target="_blank" href="http://www.lcsl.metu.edu.tr/">Laboratory for the
-                        Computational Studies of Language(LcsL),</a>
-                    <a class="timeline-link" target="_blank" href="http://ceng.metu.edu.tr/">Department of Computer
-                        Engineering,
-                    </a>
-                    <a class="timeline-link" target="_blank" href="https://www.metu.edu.tr/">Middle East Technical
-                        University,</a>
-                    <p>Turkey</p>
+                    <div class="timeline-lang-zh">
+                        <p>土耳其 中東科技大學 計算機工程學系 研究計畫顧問（英土機器翻譯等 LFG 研究）</p>
+                        <p>土耳其</p>
+                    </div>
+                    <div class="timeline-lang-en">
+                        <p>Project Advisor,</p>
+                        <a class="timeline-link" target="_blank" href="http://www.lcsl.metu.edu.tr/">LFG-based MT for
+                            English–Turkish,</a>
+                        <a class="timeline-link" target="_blank" href="http://www.lcsl.metu.edu.tr/">Laboratory for the
+                            Computational Studies of Language (LcsL),</a>
+                        <a class="timeline-link" target="_blank" href="http://ceng.metu.edu.tr/">Department of Computer
+                            Engineering,</a>
+                        <a class="timeline-link" target="_blank" href="https://www.metu.edu.tr/">Middle East Technical
+                            University,</a>
+                        <p>Turkey</p>
+                    </div>
                 </li>
                 1997
                 <li id="1997">
                     <span class="timeline-title">Aug, 1996 - Feb, 1997</span>
-                    <p>Visiting Academic 澳洲 昆士蘭大學 語言教學與研究中心 訪問學者</p>
-                    Center of Language Teaching and Research,
-                    <a class="timeline-link" target="_blank" href="https://www.uq.edu.au/">University of Queensland</a>
+                    <div class="timeline-lang-zh">
+                        <p>澳洲 昆士蘭大學 語言教學與研究中心 訪問學者</p>
+                    </div>
+                    <div class="timeline-lang-en">
+                        <p>Visiting Academic,</p>
+                        <p>Center of Language Teaching and Research,</p>
+                        <a class="timeline-link" target="_blank" href="https://www.uq.edu.au/">University of Queensland</a>
+                    </div>
                 </li>
                 1996
                 <li id="1996">
                     <span class="timeline-title">Jan, 1996 - Jul, 1996</span>
-                    <p>Visiting Colleague 夏威夷大學 語言學系 訪問學者</p>
-                    <a class="timeline-link" target="_blank" href="http://ling.hawaii.edu/">Department of
-                        Linguistics,</a>
-                    <a class="timeline-link" target="_blank" href="https://www.hawaii.edu/">University of Hawaii</a>
+                    <div class="timeline-lang-zh">
+                        <p>夏威夷大學 語言學系 訪問學者</p>
+                    </div>
+                    <div class="timeline-lang-en">
+                        <p>Visiting Colleague,</p>
+                        <a class="timeline-link" target="_blank" href="http://ling.hawaii.edu/">Department of
+                            Linguistics,</a>
+                        <a class="timeline-link" target="_blank" href="https://www.hawaii.edu/">University of Hawaii</a>
+                    </div>
                 </li>
                 1993
                 <li id="1993">
                     <span class="timeline-title">Aug, 1992 - Jul, 1993</span>
-                    <p>Associate Professor 政大 英國語文研究所 副教授</p>
-                    <a class="timeline-link" target="_blank" href="https://english.nccu.edu.tw/main.php">Graduate
-                        Institute of English Language and Literature,</a>
-                    <a class="timeline-link" target="_blank" href="https://www.nccu.edu.tw/app/home.php">NCCU</a>
+                    <div class="timeline-lang-zh">
+                        <p>國立政治大學 英國語文研究所 副教授</p>
+                    </div>
+                    <div class="timeline-lang-en">
+                        <p>Associate Professor,</p>
+                        <a class="timeline-link" target="_blank" href="https://english.nccu.edu.tw/main.php">Graduate
+                            Institute of English Language and Literature,</a>
+                        <a class="timeline-link" target="_blank" href="https://www.nccu.edu.tw/app/home.php">NCCU</a>
+                    </div>
                 </li>
                 1992
                 <li id="1992">
                     <span class="timeline-title">Aug, 1986 - Jul, 1992</span>
-                    <p>Associate Professor 美國 ECS科技 英中機器翻譯部 主任</p>
-                    English-Chinese Machine Translation, Executive Communication Systems
-                    (ECS), Inc.
+                    <div class="timeline-lang-zh">
+                        <p>美國 ECS 科技 英中機器翻譯部 主任</p>
+                    </div>
+                    <div class="timeline-lang-en">
+                        <p>Associate Professor, English-Chinese Machine Translation,</p>
+                        <p>Executive Communication Systems (ECS), Inc.</p>
+                    </div>
                 </li>
                 1986
                 <li id="1986">
                     <span class="timeline-title">Jan, 1985 - Jul, 1986</span>
-                    <p>Chinese Instructor 夏威夷大學 東亞語文學系 中文講師</p>
-                    <a class="timeline-link" target="_blank" href="https://www.hawaii.edu/eall/">Department of East
-                        Asian Languages and Literatures,</a>
-                    <a class="timeline-link" target="_blank" href="https://www.hawaii.edu/">University of Hawaii</a>
+                    <div class="timeline-lang-zh">
+                        <p>夏威夷大學 東亞語文學系 中文講師</p>
+                    </div>
+                    <div class="timeline-lang-en">
+                        <p>Chinese Instructor,</p>
+                        <a class="timeline-link" target="_blank" href="https://www.hawaii.edu/eall/">Department of East
+                            Asian Languages and Literatures,</a>
+                        <a class="timeline-link" target="_blank" href="https://www.hawaii.edu/">University of Hawaii</a>
+                    </div>
                 </li>
                 1981
                 <li id="1981">
                     <span class="timeline-title">Aug, 1980 - Jul, 1981</span>
-                    <p>English Instructor 高雄 基督教書院 英文講師</p>
-                    Kaohsiung Christianity College
+                    <div class="timeline-lang-zh">
+                        <p>高雄 基督教書院 英文講師</p>
+                    </div>
+                    <div class="timeline-lang-en">
+                        <p>English Instructor,</p>
+                        <p>Kaohsiung Christianity College</p>
+                    </div>
                 </li>
                 1980
                 <li id="1980">
                     <span class="timeline-title">Jul, 1978 - Jun, 1980</span>
-                    <p>Second Lieutenant Platoon Leader 中華民國陸軍 步兵少尉 排長</p>
-                    <a class="timeline-link" target="_blank" href="https://www.hawaii.edu/eall/">R.O.C. Army
-                    </a>Infantry
+                    <div class="timeline-lang-zh">
+                        <p>中華民國陸軍 步兵少尉 排長</p>
+                    </div>
+                    <div class="timeline-lang-en">
+                        <p>Second Lieutenant Platoon Leader, Infantry, R.O.C. Army</p>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -483,7 +578,7 @@
     <!-- Copyright Section -->
     <section class="copyright py-4 text-center text-white">
         <div class="container">
-            <small>Copyright &copy; 何萬順 <span data-copyright-year></span></small>
+            <small><span data-i18n="copyright.line">Copyright © 何萬順</span> <span data-copyright-year></span></small>
         </div>
     </section>
 
@@ -501,6 +596,7 @@
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
 </body>
 

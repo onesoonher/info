@@ -1,0 +1,55 @@
+{
+  "site": {
+    "title": "何萬順教授個人網頁",
+    "description": "何萬順教授個人網頁"
+  },
+  "nav": {
+    "brand": "何萬順教授",
+    "home": "首頁",
+    "experience": "學歷經歷",
+    "research": "學術研究",
+    "publications": "出版著作"
+  },
+  "lang": {
+    "aria": "介面語言",
+    "zh": "繁中",
+    "en": "EN"
+  },
+  "research": {
+    "awardsTitle": "獎項"
+  },
+  "experience": {
+    "degreesTitle": "學歷",
+    "currentTitle": "現職",
+    "previousTitle": "經歷",
+    "latestLabel": "近期",
+    "currentSinceTjl": "自 2002 年起",
+    "currentSinceNccu": "自 2021 年 2 月起",
+    "currentSinceToaj": "自 2023 年起"
+  },
+  "home": {
+    "name": "何萬順",
+    "affiliation": "東海大學 外國語文學系 講座教授（林南&蒲慕蓉講座教授）",
+    "phone": "+886-4-23590121, #31208",
+    "telAria": "電話",
+    "emailAria": "電子郵件"
+  },
+  "copyright": {
+    "line": "Copyright © 何萬順"
+  },
+  "publications": {
+    "searchHeading": "搜尋",
+    "charSearch": "字元搜尋",
+    "categorySearch": "類別搜尋",
+    "searchPlaceholder": "搜尋…",
+    "formalSectionTitle": "公開著作",
+    "otherLinksHeading": "其他連結",
+    "linkOpinionCw": "獨立評論",
+    "catJournal": "期刊論文",
+    "catBiblio": "書目",
+    "catChapter": "專書篇章",
+    "catBooks": "專書",
+    "catConference": "會議論文",
+    "catAll": "全部"
+  }
+}
